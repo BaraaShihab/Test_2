@@ -1,0 +1,53 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+!**/packages/build/
+
+# Logs
+*.log
+
+# Entity Framework Core
+Migrations/*.Designer.cs
+*.dbmdl
+
+# Local database files
+*.mdf
+*.ldf
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Environment files
+.env
+.env.*
+
+# ASP.NET Core secrets
+appsettings.Development.json
+secrets.json
+
+# Publish output
+publish/
+wwwroot/uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
