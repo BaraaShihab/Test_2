@@ -14,7 +14,6 @@ public class Peron
     }
     public virtual void DisplayInfo()
     {
-        Console.WriteLine($"ID: {id}, Name: {name}");
-    } 
-    
+        Console.WriteLine($"this is : Person ID: {id} | Full Name: {name} ");
+    }
 }
