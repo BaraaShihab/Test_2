@@ -51,7 +51,28 @@ public class Library
     public Book? SearchBook(string title)
     {
         return Books.FirstOrDefault(
-            b => b.Title == title
+            b => b.Title == title   
         );
     }
+
+
+    public Peron? SearchPerson(string name)
+    {
+        return People.FirstOrDefault(
+            p => p.name == name
+        );
+    }
+
+
+
+    public void UpdateBook(string title, string newTitle, string newAuthor)
+    {
+        Book? book = SearchBook(title);
+        if (book != null)
+        {
+            book.Title = newTitle;
+            book.Author = newAuthor;
+        }
+    }
+
 }
