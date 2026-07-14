@@ -48,10 +48,10 @@ public class Library
     }
 
 
-    public Book? SearchBook(int id)
+    public Book? SearchBook(string title)
     {
         return Books.FirstOrDefault(
-            b => b.Id == id
+            b => b.Title == title   
         );
     }
 
@@ -65,9 +65,9 @@ public class Library
 
 
 
-    public void UpdateBook(int id, string newTitle, string newAuthor)
+    public void UpdateBook(string title, string newTitle, string newAuthor)
     {
-        Book? book = SearchBook(id);
+        Book? book = SearchBook(title);
         if (book != null)
         {
             book.Title = newTitle;
